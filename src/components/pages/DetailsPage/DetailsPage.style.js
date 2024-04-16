@@ -10,7 +10,6 @@ export const useStyles = makeStyles()((theme) => ({
   },
   container: {
     display: "flex",
-    height: "80vh",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
@@ -19,25 +18,42 @@ export const useStyles = makeStyles()((theme) => ({
     backgroundColor: "#144184",
     color: "#ffffff",
     fontSize: "20px",
+    [theme.breakpoints.up("md")]: {
+      height: "80vh",
+    },
   },
   circular__progress: {
     color: "#ffffff",
   },
   movie__poster: {
-    border: "4px solid #7B68EE",
-    width: "30%",
-    maxWidth: "30%",
+    width: "35vh",
+  },
+  poster: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    boxShadow: "4px 4px #7B68EE",
   },
   movie__container: {
     display: "flex",
-    justifyContent: "space-between",
-    maxWidth: "80%",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    gap: "50px",
+    [theme.breakpoints.up("md")]: {
+      gap: 0,
+      maxWidth: "80%",
+      justifyContent: "space-between",
+      flexDirection: "row",
+    },
   },
   movie__details: {
     display: "flex",
     flexDirection: "column",
     gap: "1em",
-    width: "60%",
+    [theme.breakpoints.up("md")]: {
+      width: "60%",
+    },
   },
   chip: {
     padding: "5px",

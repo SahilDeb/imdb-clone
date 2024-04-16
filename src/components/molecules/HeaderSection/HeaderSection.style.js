@@ -27,7 +27,6 @@ export const useStyles = makeStyles()((theme) => ({
   heading: {
     fontSize: "2.2em",
     fontWeight: 300,
-    paddingRight: "30px",
     margin: "0 0 30px 0",
     color: "#ffffff",
   },
@@ -39,10 +38,12 @@ export const useStyles = makeStyles()((theme) => ({
   },
   search__content: {
     position: "relative",
-    marginRight: "80px",
     bottom: "-35px",
     display: "flex",
     justifyContent: "space-between",
+    [theme.breakpoints.up("md")]: {
+      marginRight: "80px",
+    },
   },
   search__input: {
     marginRight: "20px",

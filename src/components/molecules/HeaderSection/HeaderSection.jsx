@@ -3,6 +3,7 @@ import { Button, TextField } from "@mui/material";
 import { useQueryParams } from "../../../hooks/useQueryParams";
 import PropTypes from "prop-types";
 
+// TODO: Add mobile stylings
 const HeaderSection = ({ search, setSearch, handleSearch }) => {
   const { classes } = useStyles();
   const { handleSearch: handleSearchQueryParamChange } = useQueryParams();

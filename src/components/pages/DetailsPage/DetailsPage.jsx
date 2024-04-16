@@ -44,11 +44,13 @@ const DetailsPage = () => {
       <div className={classes.container}>
         {movieDetails ? (
           <div className={classes.movie__container}>
-            <img
-              className={classes.movie__poster}
-              src={movieDetails.Poster}
-              alt={movieDetails.Title}
-            />
+            <div className={classes.movie__poster}>
+              <img
+                className={classes.poster}
+                src={movieDetails.Poster}
+                alt={movieDetails.Title}
+              />
+            </div>
             <div className={classes.movie__details}>
               <h2>{movieDetails.Title}</h2>
               <p>
