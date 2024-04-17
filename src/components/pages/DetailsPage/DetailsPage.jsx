@@ -53,7 +53,7 @@ const DetailsPage = () => {
             </div>
             <div className={classes.movie__details}>
               <h2>{movieDetails.Title}</h2>
-              <p>
+              <p className={classes.chip__container}>
                 <span>Year: {movieDetails.Year}</span>
                 <span className={clsx([classes.chip, classes.chip__yellow])}>
                   Rated {movieDetails.Rated}

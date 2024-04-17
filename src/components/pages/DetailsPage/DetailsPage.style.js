@@ -55,6 +55,10 @@ export const useStyles = makeStyles()((theme) => ({
       width: "60%",
     },
   },
+  chip__container: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
   chip: {
     padding: "5px",
     margin: "0 5px",
